@@ -1,0 +1,101 @@
+/*
+ * ...
+ */
+
+body {
+  background-color: black;
+}
+
+#wrapper {
+  width: 400px;
+
+  margin-left : auto;
+  margin-right: auto;
+}
+
+/*
+ * Header
+ */
+
+header h1 {
+  font-size : 250%;
+  text-align: center;
+
+  font-family: 'Trebuchet MS', Arial, sans-serif;  
+	color      : white;
+}
+
+/*
+ * Project
+ */
+
+.project {
+  width : 100%;
+  height: 300px;
+
+  position: relative;
+
+  border: 5px solid white;
+  margin-bottom: 10px;
+}
+
+.project img {
+  width : 100%;
+  height: 100%;
+
+  position: absolute;
+}
+
+/* Overlay */
+
+.project .overfade {
+  width : 100%;
+  height:  70%;
+  
+  background-color: black;
+
+  opacity   : 0;
+  transition: opacity 300ms ease-out;
+}
+
+.project .overtext {
+  width : 100%;
+  height:  30%;
+
+  padding-top : 1.00em;
+  padding-left: 1.17em;
+
+  font-size:    0.90em;
+
+  color           : white;
+  background-color: black;
+
+  opacity   : 0;
+  transition: opacity 300ms ease-out; 
+}
+
+.project .overtext h3 {
+  font-size:     1.17em;
+  margin-bottom: 0.20em;
+
+  font-weight:   bold;
+  font-style : italic;
+}
+
+.project .overtext a {
+  text-decoration: none;
+  color          : #FF37E8;
+}
+
+/* Trigger transitions on hover and focus */
+
+.project:hover .overfade, .project:focus .overfade { opacity: 0.5; }
+.project:hover .overtext, .project:focus .overtext { opacity: 0.9; }
+
+/*
+ * Footer
+ */
+
+footer {
+  color: white;
+}
