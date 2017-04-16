@@ -3,8 +3,8 @@
  */
 
 body {
-  background-color: black;
-  color           : white;
+  background-color: white;
+  color           : black;
 }
 
 a {
@@ -12,19 +12,16 @@ a {
   color          : #FF37E8;
 }
 
-#wrapper {
-  width: 400px;
-
-  margin-left : auto;
-  margin-right: auto;
-}
-
 /*
  * Header
  */
 
 header {
+  width: 400px;
   text-align: center;
+
+  margin-left : auto;
+  margin-right: auto;
   
   margin-top   : 10px;
   margin-bottom: 30px;
@@ -45,18 +42,28 @@ header p {
  * Main
  */
 
-#main h2 {
-  font-size: 150%;
-  margin-bottom: 10px;
+.project-grid {
+  width: 1200px;
+  display: flex;
+
+  margin-left : auto;
+  margin-right: auto;
+}
+
+.project-grid .column {
+  flex: 1;
+
+  margin-left : 5px;
+  margin-right: 5px;
 }
 
 .project {
-  width : 100%;
+  width : 400px;
   height: 300px;
 
   position: relative;
 
-  border: 5px solid white;
+  border: 2px solid black;
   margin-bottom: 10px;
 }
 
