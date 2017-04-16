@@ -27,23 +27,23 @@ a {
 
 header {
   margin-top   : 10px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 header h1 {
-  font-size  : 500%;
+  font-size  : 400%;
   font-family: Lato, 'sans serif';
   
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 header #about {
   padding-left: 20px;
-  font-size: 150%;
+  font-size: 120%;
 }
 
 header h2 {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 /*
@@ -126,7 +126,7 @@ header h2 {
 /* Trigger transitions on hover and focus */
 
 .project:hover .overfade, .project:focus .overfade { opacity: 0.5; }
-.project:hover .overtext, .project:focus .overtext { opacity: 0.9; }
+.project:hover .overtext, .project:focus .overtext { opacity: 0.8; }
 
 /*
  * Footer
