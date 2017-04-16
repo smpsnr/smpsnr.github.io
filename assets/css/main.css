@@ -4,7 +4,9 @@
 
 body {
   background-color: white;
+
   color           : black;
+  font-family     : Cambria, 'serif';
 }
 
 a {
@@ -26,21 +28,21 @@ a {
 header {
   margin-top   : 10px;
   margin-bottom: 35px;
-
-  font-family: Lato;
 }
 
 header h1 {
-  font-size: 500%;
+  font-size  : 500%;
+  font-family: Lato, 'sans serif';
+  
   margin-bottom: 10px;
 }
 
 header #about {
   padding-left: 20px;
+  font-size: 150%;
 }
 
 header h2 {
-  font-size: 200%;
   margin-bottom: 30px;
 }
 
@@ -112,7 +114,8 @@ header h2 {
   font-size:     1.17em;
   margin-bottom: 0.20em;
 
-  font-weight:   bold;
+  font-family: Lato;
+  font-weight: bold;
   font-style : italic;
 }
 
