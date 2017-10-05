@@ -69,7 +69,6 @@ header h2 {
   height: auto;
 
   position: relative;
-  overflow: hidden;
   padding: 74.917% 0 0 0;
 
   margin-left:  auto;
@@ -95,12 +94,13 @@ header h2 {
 }
 
 .project .overtext {
-  max-height:  30%;
+  height: fit-content;
+  z-index: 1;
+
+  min-height:  30%;
   top:         70%;
 
-  padding-top : 3%;
-  padding-left: 3%;
-
+  padding: 3%;
   font-size:    0.90em;
 
   color           : white;
