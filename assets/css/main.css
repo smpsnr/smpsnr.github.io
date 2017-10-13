@@ -3,8 +3,11 @@
  */
 
 body {
-  background-color: white;
+  width: 80%;
+  margin: auto;
 
+  background-color: white;
+  
   color           : black;
   font-family     : Cambria, 'serif';
 }
@@ -14,9 +17,8 @@ a {
   color          : #FF37E8;
 }
 
-#wrapper {
-  width: 90%;
-  margin: auto;
+#content {
+  min-height: calc(100vh - 25px);
 }
 
 /*
@@ -24,38 +26,51 @@ a {
  */
 
 header {
-  margin-top   : 10px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 header h1 {
   font-size  : 400%;
   font-family: Lato, 'sans serif';
-  
-  margin-bottom: 15px;
-}
-
-header #about {
-  padding-left: 20px;
-  font-size: 120%;
 }
 
 header h2 {
-  margin-bottom: 10px;
+  font-size: 120%;
+  color: #7a8288;
+
+  padding-left : 20px;
+  padding-right: 20px;
+}
+
+nav {
+  width: 100%;
+  
+  display: flex;
+  justify-content: space-between;
+
+  padding-left : 20px;
+  padding-right: 20px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1000px) {
+  nav {
+    width: 60%;
+  }
 }
 
 /*
  * Main
  */
 
-.project-grid {
+main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 @media (min-width: 1000px) {
-  .project-grid {
+  main {
     flex-direction: row;
   }
 }
@@ -67,8 +82,8 @@ header h2 {
 .project {
   position: relative;
 
-  max-width : 534px;
-  max-height: 400px;
+  max-width : 400px;
+  max-height: 300px;
 
   margin-left  : auto;
   margin-right : auto;
@@ -122,10 +137,6 @@ header h2 {
   font-style : italic;
 }
 
-/*.project .overtext a {
-
-}*/
-
 /* Trigger transitions on hover and focus */
 
 .project:hover .overfade, .project:focus .overfade { opacity: 0.5; }
@@ -135,6 +146,18 @@ header h2 {
  * Footer
  */
 
-/*footer {
+footer {
+  height: 20px;
+
+  color: #7a8288;
   
-}*/
+  padding-left : 20px;
+  padding-right: 20px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 1000px) {
+  footer {
+    text-align: center;
+  }
+}
