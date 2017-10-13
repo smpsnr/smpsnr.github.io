@@ -2,14 +2,19 @@
  * ...
  */
 
-body {
-  width: 80%;
-  margin: auto;
+html { /* necessary for sticky footer */
+  height: 100%;
+}
 
+body {
+  width :  80%;
+  height: 100%;
+
+  margin: auto;
   background-color: white;
   
-  color           : black;
-  font-family     : Cambria, 'serif';
+  color      : black;
+  font-family: Cambria, 'serif';
 }
 
 a {
@@ -17,8 +22,9 @@ a {
   color          : #FF37E8;
 }
 
-#content {
-  min-height: calc(100vh - 25px);
+#content { /* push footer to bottom */
+  min-height: 100%;
+  margin-bottom: -25px;
 }
 
 /*
@@ -67,6 +73,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-bottom: 30px;
 }
 
 @media (min-width: 1000px) {
@@ -153,7 +160,7 @@ footer {
   
   padding-left : 20px;
   padding-right: 20px;
-  margin-bottom: 5px;
+  margin-bottom:  5px;
 }
 
 @media (max-width: 1000px) {
