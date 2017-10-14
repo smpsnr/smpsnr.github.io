@@ -32,7 +32,19 @@ a {
  */
 
 header {
-  margin-bottom: 10px;
+  position: relative;
+  padding-top  : 20px;
+  margin-bottom: 20px;
+}
+
+header img {
+  position: absolute;
+
+  width: 100px;
+  left: -10%;
+
+  z-index: -1;
+  opacity: 0.1;
 }
 
 header h1 {
