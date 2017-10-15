@@ -41,10 +41,16 @@ header img {
   position: absolute;
 
   width: 100px;
-  left: -10%;
+  left: -60px;
 
   z-index: -1;
   opacity: 0.1;
+}
+
+@media (max-width: 1000px) {
+  header img {
+    left: -7.5%;
+  }
 }
 
 header h1 {
